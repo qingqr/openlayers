@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build:gd",
+    "lint": "vue-cli-service lint",
+    "build:gd": "vue-cli-service build --mode gd.production",
+    "build:sd": "vue-cli-service build --mode sd.production",
+    "check-plugins": "vue inspect > output.js --mode production",
+    "dev": "npm run dev:gd",
+    "dev:gd": "vue-cli-service serve --mode gd",
+    "dev:sd": "vue-cli-service serve --mode sd"
   },
   "dependencies": {
     "core-js": "^3.6.5",

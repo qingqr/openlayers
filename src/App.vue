@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <MapTest />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MapTest from './components/MapTest.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MapTest
   }
 }
 </script>
 
 <style>
+*{padding:0; margin:0;}
+html,body{
+  height: 100%;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
